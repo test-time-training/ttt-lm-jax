@@ -1,0 +1,15 @@
+-f https://storage.googleapis.com/jax-releases/libtpu_releases.html
+jax[tpu]==0.4.14
+numpy==1.26.4
+matplotlib
+tqdm
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.3.0
+flax==0.7.0
+optax==0.1.7
+transformers==4.41.0
+datasets
+mlxu>=0.1.13
+einops
+ml_collections
+scipy==1.12.0
