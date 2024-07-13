@@ -4,7 +4,7 @@
 | [**Setup**](#setup)
 | [**Replicating Experiments**](#replicating-experiments)
 | [**Model Docs**](ttt/README.md)
-| [**Dataset Preperation**](ttt/dataloader/README.md)
+| [**Dataset Preparation**](ttt/dataloader/README.md)
 
 ## Abstract
 
