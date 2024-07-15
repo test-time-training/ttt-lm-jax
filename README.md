@@ -4,7 +4,8 @@
 | [**Setup**](#setup)
 | [**Replicating Experiments**](#replicating-experiments)
 | [**Model Docs**](ttt/README.md)
-| [**Dataset Preparation**](ttt/dataloader/README.md)
+| [**Dataset Preperation**](ttt/dataloader/README.md)
+| [**Inference Benchmark**](https://github.com/test-time-training/ttt-lm-kernels)
 
 ## Abstract
 
@@ -19,7 +20,9 @@ We consider two instantiations: TTT-Linear and TTT-MLP, whose hidden state is a 
 and a two-layer MLP respectively. 
 
 ## Setup
-This codebase is implemented in [JAX](https://jax.readthedocs.io/en/latest/index.html) and has been tested on both GPUs and Cloud TPU VMs with Python 3.11. For a PyTorch model definition, please refer to [this link](https://github.com/test-time-training/ttt-lm-pytorch).
+This codebase is implemented in [JAX](https://jax.readthedocs.io/en/latest/index.html) and has been tested on both GPUs and Cloud TPU VMs with Python 3.11. 
+
+For a PyTorch model definition, please refer to [this link](https://github.com/test-time-training/ttt-lm-pytorch). For inference kernels, or to replicate speed benchmarks from our paper, please view our [kernel implementations](https://github.com/test-time-training/ttt-lm-kernels).
 
 ### Environment Installation
 To setup and run our code on a (local) GPU machine, we highly recommend using [Anaconda](https://anaconda.com/download) when installing python dependencies. Install GPU requirements using:
