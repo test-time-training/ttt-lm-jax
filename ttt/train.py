@@ -299,7 +299,7 @@ def initialize_or_resume(
             dataset_pkl_filename = (
                 f"step_{int(FLAGS.resume_step)}/dataset_{int(FLAGS.resume_step)}.pkl"
                 if FLAGS.resume_step
-                else "dataset_state.pkl"
+                else "dataset.pkl"
             )
             dataset_resume_dir = osp.join(FLAGS.exp_dir, FLAGS.resume_exp_name, dataset_pkl_filename)
             train_loader.sampler.load_state_dict(deepcopy(mlxu.load_pickle(dataset_resume_dir)))
