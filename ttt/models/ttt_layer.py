@@ -518,7 +518,7 @@ class TTTMLPBase(TTTBase):
         )
         self.W2 = self.param(
             "ttt_dense_1",
-            nn.initializers.normal(self.config.initializer_range / math.sqrt(2 * self.config.num_hidden_layers)),
+            nn.initializers.normal(self.config.initializer_range),
             (self.num_heads, 4 * self.head_dim, self.head_dim),
             self.param_dtype,
         )
