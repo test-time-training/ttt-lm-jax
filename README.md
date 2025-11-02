@@ -48,8 +48,8 @@ wandb login
 Our Llama-2 tokenized datasets are available for download from Google Cloud Buckets:
 
 ```
-gsutil -m cp -r gs://llama-2-pile/* llama-2-pile/
-gsutil -m cp -r gs://llama-2-books3/* llama-2-books3/
+gsutil -m cp -r gs://llama2-pile/* llama-2-pile/
+gsutil -m cp -r gs://llama2-books/* llama-2-books3/
 ```
 
 Once downloaded, set the `dataset_path` flag in `train.py` to the directory containing the `tokenizer_name-meta-llama` folder. This will allow the dataloader to find the correct path. 
